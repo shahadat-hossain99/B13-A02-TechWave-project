@@ -72,7 +72,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 760px;
+  height: 100%;
 }
 .banner-container {
   margin: 0 auto;
@@ -93,7 +93,6 @@
   line-height: 22px;
   border-radius: 1000px;
   color: #1a0b2e;
-  /* text-align: right; */
   margin-bottom: -80px;
   position: relative;
   margin-right: -240px;
@@ -103,6 +102,7 @@
   position: relative;
   width: 350px;
   height: 350px;
+  margin-top: 100px;
 }
 .img-1 {
   width: 100%;
@@ -111,9 +111,10 @@
 }
 .img-2 {
   position: absolute;
-  top: 60px;
+  top: 70px;
   left: 74px;
   width: 200px;
+  height: 200px;
   padding: 20px 40px;
 }
 .banner-title {
@@ -150,7 +151,9 @@
   border-radius: 10000px;
   border: 1px solid #00ff88;
 }
-
+.info {
+  margin-bottom: 100px;
+}
 /* about section style  */
 
 #about {
@@ -306,9 +309,11 @@
   background-color: #250d44;
   border-radius: 24px;
   padding: 24px;
+  width: 380px;
 }
 .episode iframe {
   border-radius: 24px;
+  width: 100%;
 }
 .episode-title {
   margin-top: 24px;
@@ -334,6 +339,7 @@
 }
 .Meet-the-Host {
   margin-top: 120px;
+  padding-bottom: 120px;
 }
 
 .host-container {
@@ -343,7 +349,7 @@
   gap: 24px;
   padding: 40px;
   align-items: center;
-
+  max-width: 1200px;
   justify-content: center;
 }
 .host-name {
@@ -375,6 +381,56 @@
   align-content: center;
 }
 /* footer section style  */
+
+#footer {
+  background-image: url(./assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 512px;
+}
+.footer-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 220px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 120px;
+}
+.footer-logo {
+  width: 410px;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 72px;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.footer-items img {
+  margin-right: 8px;
+}
+.footer-items a span {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 19px;
+  opacity: 0.6;
+}
+.footer-items a {
+  text-decoration: none;
+}
+.paraaaa {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.6;
+}
 
 /* responsive design style for mobile device  */
 @media screen and (max-width: 576px) {
