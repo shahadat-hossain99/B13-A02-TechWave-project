@@ -81,8 +81,23 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 40;
+  gap: 40px;
   padding-top: 101px;
+}
+.top {
+  float: right;
+  padding: 8px 16px;
+  background-color: #00ff88;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 22px;
+  border-radius: 1000px;
+  color: #1a0b2e;
+  /* text-align: right; */
+  margin-bottom: -80px;
+  position: relative;
+  margin-right: -240px;
+  border: none;
 }
 .images {
   position: relative;
@@ -135,6 +150,71 @@
   border-radius: 10000px;
   border: 1px solid #00ff88;
 }
+
+/* about section style  */
+
+#about {
+  background-color: #1a0b2e;
+}
+.about-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.about-info {
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.about-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.para-01 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.para-02 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 0.8;
+}
+.divider-02 {
+  height: 0;
+  width: 1200px;
+  border: 1px solid white;
+  opacity: 0.1;
+  margin-top: 80px;
+  display: block;
+  margin-bottom: 80px;
+}
+.ratings {
+  width: 1200px;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 80px;
+  margin-left: 50px;
+  margin-bottom: 120px;
+}
+.card-title {
+  font-size: 3rem;
+  color: #00ff88;
+  font-weight: 900;
+  line-height: 58px;
+  margin-bottom: 16px;
+}
 /* footer section style  */
 
 /* responsive design style for mobile device  */
@@ -160,19 +240,18 @@
   }
 
   #banner {
-    background-image: url(./assets/hero-bg.png);
     width: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 466px;
-    display: none;
+    background-size: 100%;
+    height: 120vh;
+    padding: 20px;
   }
 
   .banner-container {
     margin: 0 auto;
     width: 100%;
     gap: 24px;
-    padding-top: 40px;
+    /* padding: 20px; */
   }
   .images {
     width: 200px;
@@ -182,7 +261,7 @@
   .img-1 {
     width: 90%;
     height: 90%;
-    display: block;
+    display: r;
     margin-bottom: -20px;
     margin-top: -20px;
   }
@@ -193,5 +272,19 @@
     margin-top: 20px;
     height: 150px;
     width: auto;
+  }
+
+  /* about section */
+
+  .divider-02 {
+    margin: 40px 0;
+  }
+  .ratings {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    margin: 40px 20px;
+    text-align: center;
   }
 }
