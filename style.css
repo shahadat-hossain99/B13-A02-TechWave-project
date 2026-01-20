@@ -394,7 +394,7 @@
 .social-links {
   list-style: none;
   display: flex;
-  float: left;
+  /* float: left; */
   gap: 8px;
   padding: 0;
 }
@@ -573,6 +573,22 @@
     padding-top: 40px;
   }
 
+  /* meet the host section  */
+
+  .host-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .host-info {
+    text-align: center;
+  }
+  .social-links {
+    align-items: center;
+    justify-content: center;
+  }
+  .Meet-the-Host {
+    margin-top: 60px;
+  }
   /* footer section  */
 
   .footer-container {
